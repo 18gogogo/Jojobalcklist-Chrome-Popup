@@ -1,4 +1,5 @@
 Self-hosting Jojoblacklist Popup
+
 You can run Jojoblacklist Popup locally without having to install it from the Chrome Store. Here's how:
 
 Download the latest Buildv1.0.0.zip from the releases page
