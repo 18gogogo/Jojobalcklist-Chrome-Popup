@@ -1,0 +1,202 @@
+:root {
+  --bg-dark: #0F172A;
+  --neon-blue: #00F5FF;
+  --text-primary: #F8FAFC;
+  --warning-yellow: #FFD700;
+}
+
+body {
+  background: linear-gradient(135deg, var(--bg-dark) 0%, rgba(15, 23, 42, 0.8) 100%);
+  color: var(--text-primary);
+  font-family: 'Noto Sans TC', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  flex-grow: 1;
+}
+
+.title {
+  color: var(--warning-yellow);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
+  font-size: 2.2rem;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h1.title {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 12px rgba(255, 215, 0, 0.6);
+}
+
+.form-wrapper {
+  border: 2px solid var(--neon-blue);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 245, 255, 0.3);
+}
+
+.google-form {
+  width: 100%;
+  height: 70vh;
+  min-height: 600px;
+}
+
+.footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+  filter: drop-shadow(0 0 4px var(--neon-blue));
+}
+
+/* 3D按鈕樣式 */
+.button-group {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.btn-submit, .btn-watch {
+  position: relative;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.btn-submit {
+  background-color: #333;
+  color: white;
+  font-weight: normal;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 245, 255, 0.5), 0 2px 15px rgba(0, 245, 255, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-shadow: 0 0 5px rgba(0, 245, 255, 0.8);
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 245, 255, 0.7), 0 4px 20px rgba(0, 245, 255, 0.5);
+}
+
+.btn-watch {
+  background: linear-gradient(145deg, #80FFB2, #00CC88);
+  color: #0F172A;
+  box-shadow: 5px 5px 15px rgba(0, 204, 136, 0.3),
+             inset -3px -3px 5px rgba(0,0,0,0.1);
+}
+
+.btn-watch:hover {
+  filter: brightness(105%);
+  box-shadow: 0 0 20px rgba(0, 204, 136, 0.5);
+}
+
+.hover-effect {
+  position: absolute;
+  background: rgba(255,255,255,0.15);
+  width: 50px;
+  height: 100%;
+  left: -30%;
+  top: 0;
+  transform: skewX(-15deg);
+  transition: left 0.3s;
+}
+
+button:hover .hover-effect {
+  left: 120%;
+}
+
+button:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+/* 媒體查詢以支持響應式設計 */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  body {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .button {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .container {
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+    .button {
+        padding: 12px;
+        font-size: 18px;
+    }
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .button {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .container {
+        width: 95%;
+        padding: 5px;
+    }
+}

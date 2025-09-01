@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://www.googletagservices.com https://www.google.com https://googleads.g.doubleclick.net https://www.googletagmanager.com;">
+  <title>jojobalcklist popup</title>
+  <link rel="icon" href="512icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .no-select {
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+    }
+    .watermark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      color: #ccc;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Jojobalcklist 不良租客名單</h1>
+    
+    <div class="button-group">
+      <a href="https://tally.so/r/w2Dq6b" target="content-iframe"><button class="btn-submit"><span class="text">不良租客提交表</span><span class="hover-effect"></span></button></a>
+      
+      <button id="checkEmailButton" class="btn-submit"><span class="text">查詢名單</span><span class="hover-effect"></span></button>
+    </div>
+
+    <div style="text-align: center; margin-top: 10px;">
+      <p>您的支持，是作者無償創作的動力！請捐款，讓你們的單位可持續發光不被污染！<a href="https://buymeacoffee.com/18gogogo" target="_blank"><img src="apple-icon-120x120.png" style="width: 25px; height: 25px; vertical-align: middle;" alt="PM"></a></p>
+    </div>
+
+
+    <div class="form-wrapper">
+      <div class="watermark">jojobalcklist by 18gogogo</div>
+      <iframe id="content-iframe" class="no-select" src="" width="100%" height="600px" name="content-iframe"></iframe>
+    </div>
+
+    <div class="footer" style="display: flex; align-items: center; justify-content: center;">
+      <span>© 18gogogo 保留所有權利</span>
+      <img src="18GOGOGO TEAM.png" alt="Logo" class="logo" style="width: 25px; height: 25px;">
+      <div class="contact-us" style="display: flex; align-items: center; margin-left: 10px; flex-direction: row;">
+        <p style="margin-right: 5px;">Contact Us: support@18gogogo.top</p>
+      
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+  <script src="iframe-script.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>

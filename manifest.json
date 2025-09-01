@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Jojobalcklist Popup",
+  "version": "1.0.0",
+  "description": "Jojobalcklist Popup",
+  "action": {
+    "default_icon": "512icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://18gogogo.top/*"
+  ],
+  "icons": {
+    "128": "512icon.png"
+  }
+}
